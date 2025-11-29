@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Members - SAMEBA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section style="padding-bottom: 50px" class="relative py-32 flex items-center justify-center bg-gradient-to-r from-green-600 to-yellow-500 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Executive Members</h1>
+            <p class="text-xl md:text-2xl font-medium">Meet the leadership driving SAMEBA's mission</p>
+        </div>
+    </section>
+
+    <!-- Executive Members -->
+    <section class="py-8 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-4">Our Leadership Team</h2>
+            
+            <!-- President -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-8 p-6 bg-gray-50 rounded-lg">
+                <img src="https://static.photos/people/320x240/10" alt="Gift Maila" class="w-48 h-48 rounded-full object-cover border-4 border-green-600">
+                <div>
+                    <h3 class="text-2xl font-bold text-green-700 mb-2">Gift Maila</h3>
+                    <p class="text-yellow-600 font-medium mb-4">President</p>
+                    <p class="text-gray-700 mb-4">Comrade Gift Maila is a seasoned activist and community leader with over 15 years of experience in beneficiary rights advocacy.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-600 hover:text-green-800">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="#" class="text-green-600 hover:text-green-800">
+                            <i data-feather="twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deputy President -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-4 p-6 bg-gray-50 rounded-lg">
+                <img src="https://static.photos/people/320x240/11" alt="Molatelo Precious Maile" class="w-48 h-48 rounded-full object-cover border-4 border-green-600">
+                <div>
+                    <h3 class="text-2xl font-bold text-green-700 mb-2">Molatelo Precious Maile</h3>
+                    <p class="text-yellow-600 font-medium mb-4">Deputy President</p>
+                    <p class="text-gray-700 mb-4">Comrade Maile brings extensive experience in policy development and community mobilization to the SAMEBA leadership.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-green-600 hover:text-green-800">
+                            <i data-feather="mail"></i>
+                        </a>
+                        <a href="#" class="text-green-600 hover:text-green-800">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Members -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <img src="https://static.photos/people/320x240/12" alt="Sarah Mokoena" class="w-32 h-32 rounded-full object-cover border-4 border-green-600 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">Sarah Mokoena</h3>
+                    <p class="text-yellow-600 font-medium mb-4">Secretary General</p>
+                    <p class="text-gray-700">Experienced administrator and community organizer.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <img src="https://static.photos/people/320x240/13" alt="Tebogo Nkosi" class="w-32 h-32 rounded-full object-cover border-4 border-green-600 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">Tebogo Nkosi</h3>
+                    <p class="text-yellow-600 font-medium mb-4">Treasurer</p>
+                    <p class="text-gray-700">Financial expert with a passion for economic justice.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg text-center">
+                    <img src="https://static.photos/people/320x240/14" alt="Lerato Phiri" class="w-32 h-32 rounded-full object-cover border-4 border-green-600 mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">Lerato Phiri</h3>
+                    <p class="text-yellow-600 font-medium mb-4">Communications Officer</p>
+                    <p class="text-gray-700">Media and public relations specialist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

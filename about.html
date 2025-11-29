@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SAMEBA</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section style="padding-bottom: 50px" class="relative py-32 flex items-center justify-center bg-gradient-to-r from-green-600 to-yellow-500 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">About SAMEBA</h1>
+            <p class="text-xl md:text-2xl font-medium">Our history, mission, and vision for South Africa</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-4 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-green-700 mb-6">Our History</h2>
+                <p class="text-gray-700 mb-4">Founded in 2018, SAMEBA emerged from the need to address systemic issues faced by maintenance and estate beneficiaries across South Africa. Our founders recognized the lack of political representation for this important segment of society.</p>
+                <p class="text-gray-700">Starting as a small community organization in Limpopo, we have grown into a provincial movement with thousands of members advocating for change.</p>
+            </div>
+            
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-green-700 mb-6">Our Mission</h2>
+                <p class="text-gray-700 mb-4">SAMEBA exists to protect and promote the rights of maintenance and estate beneficiaries through:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2 mb-4">
+                    <li>Policy advocacy and legal reforms</li>
+                    <li>Community education and empowerment</li>
+                    <li>Economic development initiatives</li>
+                    <li>Political representation</li>
+                </ul>
+                <p class="text-gray-700">We believe in creating sustainable solutions that uplift beneficiaries and their families.</p>
+            </div>
+            
+            <div>
+                <h2 class="text-3xl font-bold text-green-700 mb-6">Our Vision</h2>
+                <p class="text-gray-700 mb-4">We envision a South Africa where:</p>
+                <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                    <li>Every beneficiary receives fair and timely maintenance payments</li>
+                    <li>Estate distribution is equitable and transparent</li>
+                    <li>Beneficiaries have access to education and economic opportunities</li>
+                    <li>The rights of vulnerable groups are protected by law</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-4 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Our Core Values</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="shield" class="text-green-700 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-700 mb-3">Integrity</h3>
+                    <p class="text-gray-700">We operate with honesty, transparency, and accountability in all our dealings.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="users" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-700 mb-3">Community</h3>
+                    <p class="text-gray-700">We prioritize collective wellbeing and solidarity among beneficiaries.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="award" class="text-green-700 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-green-700 mb-3">Excellence</h3>
+                    <p class="text-gray-700">We strive for the highest standards in service delivery and representation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

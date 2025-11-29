@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMEBA - South African Maintenance and Estate Beneficiaries Association</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sameba: {
+                dark: '#1B4D3E',
+                yellow: '#FFD700',
+                blue: '#0056B3'
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+<body class="font-sans bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section 
+    <section class="relative h-screen flex items-center justify-center bg-gradient-to-r from-green-600 to-yellow-500 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto text-white">
+            <img src="logo.png" alt="SAMEBA Logo" class="h-32 mx-auto mb-6">
+<h1 class="text-4xl md:text-5xl font-bold mb-6">SAMEBA</h1>
+            <p class="text-xl md:text-2xl font-medium mb-8">South African Maintenance and Estate Beneficiaries Association</p>
+            <p class="text-2xl font-bold italic mb-8">"Siyabangena"</p>
+            <a href="register.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-md font-bold text-lg transition duration-300">Join The Movement</a>
+        </div>
+    </section> -->
+
+ <!-- Hero Section -->
+    <section id="home" class="relative bg-sameba-dark text-white py-28" style="
+    padding-bottom: 30px;">
+      <div class="absolute inset-0 bg-black/50">
+        <div class="absolute inset-0 bg-[url('http://static.photos/nature/1200x630/42')] bg-cover bg-center mix-blend-overlay"></div>
+      </div>
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="flex justify-center mb-6">
+            <div class="bg-sameba-yellow p-2 rounded-full">
+              <div class="bg-sameba-blue p-1 rounded-full">
+                <img src="logo.png" alt="SAMEBA Logo" class="w-24 h-24 rounded-full object-cover">
+              </div>
+            </div>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">SAMEBA</h1>
+          <p class="text-xl md:text-2xl mb-8">South African Maintenance and Estate Beneficiaries Association</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#register" class="bg-sameba-yellow hover:bg-sameba-blue text-sameba-dark font-bold py-3 px-6 rounded-full transition duration-300">Join Us</a>
+            <a href="#about" class="border-2 border-white hover:bg-white/20 font-bold py-3 px-6 rounded-full transition duration-300">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- About Preview -->
+    <section class="py-4 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="md:flex items-center gap-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="data:image/webp;base64,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" alt="SAMEBA Members" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-green-700 mb-6">About SAMEBA</h2>
+                    <p class="text-gray-700 mb-4">The South African Maintenance and Estate Beneficiaries Association (SAMEBA) is a political movement dedicated to advocating for the rights of maintenance and estate beneficiaries across South Africa.</p>
+                    <p class="text-gray-700 mb-6">Our mission is to ensure fair treatment, legal representation, and economic empowerment for all beneficiaries through policy reform, education, and community engagement.</p>
+                    <a href="about.html" class="inline-block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md font-medium transition duration-300">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="py-8 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-green-700 mb-12">Upcoming Events</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-green-700 text-white p-4">
+                        <p class="text-sm">15 June 2023</p>
+                        <h3 class="text-xl font-bold">Community Meeting</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Join us for our monthly community meeting at Polokwane City Hall.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Polokwane City Hall, 10:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-yellow-500 text-black p-4">
+                        <p class="text-sm">22 June 2023</p>
+                        <h3 class="text-xl font-bold">Youth Empowerment Workshop</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Skills development and career guidance for young people.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Lebowakgomo Community Center, 9:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                    <div class="bg-green-700 text-white p-4">
+                        <p class="text-sm">30 June 2023</p>
+                        <h3 class="text-xl font-bold">Policy Discussion Forum</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 mb-4">Public discussion on estate beneficiary rights and policies.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Makhado Civic Center, 2:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Call to Action -->
+    <section class="py-16 px-4 bg-gradient-to-r from-green-700 to-green-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+            <p class="text-xl mb-8">Join SAMEBA today and be part of the movement transforming lives in Limpopo and beyond.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="register.html" class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-md font-bold transition duration-300">Register Now</a>
+                <a href="contact.html" class="border-2 border-white hover:bg-white hover:text-green-700 px-8 py-3 rounded-md font-bold transition duration-300">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
